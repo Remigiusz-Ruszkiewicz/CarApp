@@ -1,0 +1,21 @@
+﻿<Window x:Class="CarApp.Views.ProgressBarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarApp.Views"
+        mc:Ignorable="d"
+        Title="ProgressBar" Height="300" Width="500"
+        ContentRendered="ProgressRenderedAsync" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Materials/Icon1.ico">
+
+    <Grid Height="300" VerticalAlignment="Top">
+        <ProgressBar HorizontalAlignment="Center" Height="33" Margin="0,130,0,0" VerticalAlignment="Top" Width="450"
+                      Name="ProgressBarElement" Minimum="0" Maximum="100"
+                     />
+        <TextBlock Text="{Binding ElementName=ProgressBarElement, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,105,0,0" />
+
+        <TextBlock HorizontalAlignment="Center" Margin="0,80,0,0" Text="Progress Bar" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Cancel" Name="cancel" HorizontalAlignment="Center" Margin="0,200,0,44" Click="CancelTaskButton" Width="80" Height="40" />
+
+    </Grid>
+</Window>
