@@ -69,6 +69,7 @@ namespace CarApp
 
         private void OpenProgressBarButton(object sender, RoutedEventArgs e)
         {
+            this.Visibility = Visibility.Hidden;
             ProgressBarWindow progresBarWindow = new ProgressBarWindow();
             progresBarWindow.Show();
         }

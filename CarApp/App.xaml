@@ -4,6 +4,19 @@
              xmlns:local="clr-namespace:CarApp"
              Startup="OnStartup">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FF999999" Offset="1"/>
+                            <GradientStop Color="#FFCBCBCB" Offset="0"/>
+                        </RadialGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

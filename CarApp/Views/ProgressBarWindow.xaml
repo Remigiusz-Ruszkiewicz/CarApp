@@ -15,7 +15,7 @@
         <TextBlock Text="{Binding ElementName=ProgressBarElement, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,105,0,0" />
 
         <TextBlock HorizontalAlignment="Center" Margin="0,80,0,0" Text="Progress Bar" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button Content="Cancel" Name="cancel" HorizontalAlignment="Center" Margin="0,200,0,44" Click="CancelTaskButton" Width="80" Height="40" />
+        <Button Content="Cancel" Name="cancel" HorizontalAlignment="Center" Margin="0,200,0,44" Click="CancelTaskButton" Width="80" Height="40" Style="{StaticResource ButtonStyle}" />
 
     </Grid>
 </Window>
